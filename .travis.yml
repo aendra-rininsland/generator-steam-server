@@ -1,0 +1,7 @@
+language: node_js
+node_js:
+  - '0.10'
+before_install:
+  - currentfolder=${PWD##*/}
+  - if [ "$currentfolder" != 'generator-steam-server' ]; then cd .. && eval "mv $currentfolder generator-steam-server" && cd generator-steam-server; fi
+
